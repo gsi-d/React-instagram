@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Corpo from "./components/Corpo";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <NavBar/>
+      <Corpo/>
+      
+      <div class="fundo-mobile">
+        <ion-icon name="home"></ion-icon>
+        <ion-icon name="search-outline"></ion-icon>
+        <ion-icon name="add-circle-outline"></ion-icon>
+        <ion-icon name="heart-outline"></ion-icon>
+        <ion-icon name="person-outline"></ion-icon>
+      </div>
+    </>
+  )
 }
 
 export default App;
